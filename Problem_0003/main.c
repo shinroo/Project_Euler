@@ -15,7 +15,7 @@ int main(){
 
   unsigned long long int length = (number / 2)-2;
 
-  unsigned long long int factors[length];
+  int factors[length];
 
   printf("The prime factors of %llu are: \n", number);
 
@@ -33,7 +33,7 @@ int main(){
 
       if (number % counter == 0){
         factors[counter] = 1;
-        printf("%llu \n", factors[number]);
+        printf("%d \n", factors[number]);
       }
       else{
         factors[counter] = 0;
